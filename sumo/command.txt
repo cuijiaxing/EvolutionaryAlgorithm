@@ -1,0 +1,18 @@
+
+Generate: grip net work
+netgenerate --grid-net --grid-number=2 --grid-length=400 --output-file=MySUMOFile.net.xml -L 2 --attach-length 150 --tls.guess --tls.yellow.time 0 
+
+Generate: trips
+python $SUMO_HOME/tools/trip/randomTrips.py -n test.net.xml -e 300 -p 3 -o test.trip.xml
+
+Generate detectors:
+python $SUMO_HOME/tools/output/generateTLSE1Detectors.py --net-file test.rou.xml -f 10 -l 10 -o test.add.xml
+
+Generate route:
+duarouter -n test.net.xml -t test.trip.xml -o test.rou.xml
+
+Stripp all trips that is not started from edge
+$SUMO_HOME/tools/trip/route2trips.py test.rou.xml
+
+Generate route from flow files:
+duarouter -n test.net.xml -t test.flow.xml -o test.rou.xml

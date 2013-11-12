@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue Oct 29 09:04:42 2013 by SUMO netconvert Version 0.17.1
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="cross.nod.xml"/>
+        <edge-files value="cross.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="true"/>
+    </output>
+
+</configuration>
+-->
+
+<net version="0.13" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/net_file.xsd">
+
+    <location netOffset="510.00,510.00" convBoundary="0.00,0.00,1020.00,1020.00" origBoundary="-510.00,-510.00,510.00,510.00" projParameter="!"/>
+
+    <edge id="1i" from="1" to="0" priority="78">
+        <lane id="1i_0" index="0" speed="19.44" length="493.75" shape="11.50,508.35 505.25,508.35"/>
+    </edge>
+    <edge id="2i" from="2" to="0" priority="78">
+        <lane id="2i_0" index="0" speed="19.44" length="493.75" shape="1008.50,511.65 514.75,511.65"/>
+    </edge>
+    <edge id="3i" from="3" to="0" priority="78">
+        <lane id="3i_0" index="0" speed="19.44" length="493.75" shape="511.65,11.50 511.65,505.25"/>
+    </edge>
+    <edge id="4i" from="4" to="0" priority="78">
+        <lane id="4i_0" index="0" speed="19.44" length="493.75" shape="508.35,1008.50 508.35,514.75"/>
+    </edge>
+    <edge id="51i" from="1" to="51" priority="78">
+        <lane id="51i_0" index="0" speed="19.44" length="8.50" shape="8.50,511.65 0.00,511.65"/>
+    </edge>
+    <edge id="52i" from="2" to="52" priority="78">
+        <lane id="52i_0" index="0" speed="19.44" length="8.50" shape="1011.50,508.35 1020.00,508.35"/>
+    </edge>
+    <edge id="53i" from="3" to="53" priority="78">
+        <lane id="53i_0" index="0" speed="19.44" length="8.50" shape="508.35,8.50 508.35,0.00"/>
+    </edge>
+    <edge id="54i" from="4" to="54" priority="78">
+        <lane id="54i_0" index="0" speed="19.44" length="8.50" shape="511.65,1011.50 511.65,1020.00"/>
+    </edge>
+
+    <junction id="0" type="unregulated" x="510.00" y="510.00" incLanes="4i_0 2i_0 3i_0 1i_0" intLanes="" shape="506.75,514.75 509.95,514.75 514.75,513.25 514.75,510.05 513.25,505.25 510.05,505.25 505.25,506.75 505.25,509.95"/>
+    <junction id="1" type="unregulated" x="10.00" y="510.00" incLanes="" intLanes="" shape="11.50,509.95 11.50,506.75 8.50,510.05 8.50,513.25"/>
+    <junction id="2" type="unregulated" x="1010.00" y="510.00" incLanes="" intLanes="" shape="1011.50,509.95 1011.50,506.75 1008.50,510.05 1008.50,513.25"/>
+    <junction id="3" type="unregulated" x="510.00" y="10.00" incLanes="" intLanes="" shape="510.05,11.50 513.25,11.50 509.95,8.50 506.75,8.50"/>
+    <junction id="4" type="unregulated" x="510.00" y="1010.00" incLanes="" intLanes="" shape="510.05,1011.50 513.25,1011.50 509.95,1008.50 506.75,1008.50"/>
+    <junction id="51" type="unregulated" x="0.00" y="510.00" incLanes="51i_0" intLanes="" shape="0.00,513.25 0.00,510.05"/>
+    <junction id="52" type="unregulated" x="1020.00" y="510.00" incLanes="52i_0" intLanes="" shape="1020.00,506.75 1020.00,509.95"/>
+    <junction id="53" type="unregulated" x="510.00" y="0.00" incLanes="53i_0" intLanes="" shape="506.75,0.00 509.95,0.00"/>
+    <junction id="54" type="unregulated" x="510.00" y="1020.00" incLanes="54i_0" intLanes="" shape="513.25,1020.00 510.05,1020.00"/>
+
+</net>
