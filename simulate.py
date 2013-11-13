@@ -44,10 +44,13 @@ class Simulate:
         for _ in xrange(1000):
             traci.simulationStep()
             #get the speed from all detectors
-            #notice that the value can be negativa
+            #notice that the value CA_CERTS
+#             if traci.inductionloop.getLastStepMeanSpeed(inductionLoopIdList[0]) > 1:
+#                 totalSpeed = totalSpeed + traci.inductionloop.getLastStepMeanSpeed(inductionLoopIdList[0])
             for inductionLoop in inductionLoopIdList:
                 if traci.inductionloop.getLastStepMeanSpeed(inductionLoop) > 1:
                     totalSpeed = totalSpeed + traci.inductionloop.getLastStepMeanSpeed(inductionLoop)
+                    #totalSpeed = totalSpeed + traci.inductionloop.getLastStepVehicleNumber(inductionLoop)
         
         traci.close()
         self.fitness = totalSpeed / len(inductionLoopIdList)

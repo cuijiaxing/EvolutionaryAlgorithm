@@ -1,19 +1,33 @@
 import random
 class TrafficLight:
-    scale = 1000 #convert between milliseconds and second
+    ScaleFactor = 1000 #convert between milliseconds and second
     def __init__(self, times):
         self.trafficLightIndexNum = len(times)
         self.times = times
-
+    
+    #get a random individual
     @classmethod
     def getARandomTrafficLight(cls, num, minValue, maxValue):
-        instan = TrafficLight([random.randint(minValue, maxValue) * cls.scale for _ in xrange(num)])
+        instan = TrafficLight([TrafficLight.scale(random.randint(minValue, maxValue)) for _ in xrange(num)])
         return instan
-
+    
+    #reverse the traffic timing by using maxValue - currentValue
+    @classmethod
+    def getAReverseTrafficLight(cls, ind, minValue, maxValue):
+        reverseArray = []
+        for i in xrange(len(ind.times)):
+            reverseArray.append(cls.scale(maxValue) - ind.times[i])
+        return TrafficLight(reverseArray)
+        
+       
+    @classmethod 
+    def scale(cls, value):
+        return value * cls.ScaleFactor
+    
     def __str__(self):
         retStr = ""
         for num in self.times:
-            retStr = retStr + str(num / 1000) + " "
+            retStr = retStr + str(num / 1000) + ","
         return retStr
 
 

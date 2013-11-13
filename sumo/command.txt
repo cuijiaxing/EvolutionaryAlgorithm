@@ -6,7 +6,7 @@ Generate: trips
 python $SUMO_HOME/tools/trip/randomTrips.py -n test.net.xml -e 300 -p 3 -o test.trip.xml
 
 Generate detectors:
-python $SUMO_HOME/tools/output/generateTLSE1Detectors.py --net-file test.rou.xml -f 10 -l 10 -o test.add.xml
+python $SUMO_HOME/tools/output/generateTLSE1Detectors.py --net-file test.net.xml -f 10 -l 50 -o test.add.xml
 
 Generate route:
 duarouter -n test.net.xml -t test.trip.xml -o test.rou.xml

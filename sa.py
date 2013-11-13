@@ -15,7 +15,7 @@ class SA:
         
         #always accept better ones
         if individual.fitness > prevIndividual.fitness:
-            return 1
+            return 1.0
         else:
             delta = prevIndividual.fitness - individual.fitness
             return 1 / (1 + math.exp(delta * 1.0 / time))
@@ -41,6 +41,8 @@ class SA:
         startIndividual.evaluate() #get the fitness
         currentIndividual = startIndividual
         currentEnergy = currentIndividual.fitness
+        #record fitness
+        fitnessOutputFile = open("fitness" + str(maxIterationNum) + ".txt", "w")
         while timeCount < maxIterationNum and currentEnergy < optimalEnergy:
             #get the current temperature
             T = self.temperature(timeCount, maxIterationNum)
@@ -49,21 +51,23 @@ class SA:
             newInd.evaluate()
             
             acquiredP = self.P(currentIndividual, newInd, T)
-            creterionP = random.random()
-            print acquiredP
-            print creterionP
+            criterionP = random.random()
             
-            if acquiredP > creterionP:
-                print "transition success"
+            if acquiredP > criterionP:
+#                 print "transition success"
                 currentIndividual = newInd
                 currentEnergy = newInd.fitness
-            else:
-                print "Transition Failed"
+#             else:
+#                 print "Transition Failed"
             if newInd.fitness > bestEnergy:
                 bestIndividual = newInd
                 bestEnergy = newInd.fitness
             timeCount = timeCount + 1
-            print currentIndividual.fitness
+#             print currentIndividual.fitness
+            fitnessOutputFile.write(str(currentIndividual.fitness) + "\n")
+        fitnessOutputFile.close()
+            
+            
         
         return bestIndividual
     
@@ -72,14 +76,14 @@ class SA:
         outputFile = open(fileName, "w")
         for index in xrange(len(trafficLightIdList)):
             outputFile.write(trafficLightIdList[index] + ":" + str(individual.genes[index]) + "\n")
-            totalIndividualStr = totalIndividualStr + trafficLightIdList[index] + ":" + str(individual.genes[index]);
+            totalIndividualStr = totalIndividualStr + str(individual.genes[index]) ;
         outputFile.write("Best Fitness is:" + str(individual.fitness) + "\n")
         outputFile.write(totalIndividualStr)
         outputFile.close()
             
     def startSA(self, maxIterationNum, individualNum, startIndividual):
         bestIndividual = self.iterate(maxIterationNum, startIndividual)
-        self.recordBestToFile("best.txt", bestIndividual, Simulate.trafficLightIdList)
+        self.recordBestToFile("best" + str(maxIterationNum) + ".txt", bestIndividual, Simulate.trafficLightIdList)
 
 
 

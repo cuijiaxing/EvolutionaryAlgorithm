@@ -4,8 +4,8 @@ from simulate import Simulate
 from traffic_light import TrafficLight
 class Individual:
     
-    scale = TrafficLight.scale
-    MaxTime = 10 
+    scale = TrafficLight.ScaleFactor
+    MaxTime = 100 
     MinTime =  0 
     NumForEachTrafficLight = 4 
 
@@ -40,6 +40,7 @@ class Individual:
         ind = Individual(individualNum)
         ind.genes = trafficLightList
         return ind
+    
 
     #clone the current individual
     def clone(self):
@@ -54,7 +55,11 @@ class Individual:
             index = random.randint(0, self.individualNum - 1)
             #change the traffic light into a new one
             newTrac = TrafficLight.getARandomTrafficLight(self.NumForEachTrafficLight, self.MinTime, self.MaxTime)
-            newInstance.genes[index] = newTrac
+        elif strategy == "reverse":
+            index = random.randint(0, self.individualNum - 1)
+            newTrac = TrafficLight.getAReverseTrafficLight(newInstance.genes[index], self.MinTime, self.MaxTime)
+            
+        newInstance.genes[index] = newTrac
         return newInstance
 
     #evaluate the fitness
@@ -65,8 +70,9 @@ class Individual:
         subProcess.wait()
 
 if __name__ == "__main__":
-    ind = Individual.generateDeterIndividual(4, [2,5,10,7,5,9,10,10,9,1,5,6,6,2,3,6])
+    #deterministic fitness 431.102042914                                                               
+    ind = Individual.generateDeterIndividual(4, [1,1,100,100,100,100,1,1,60,37,82,31,1,2,100,100])
     #ind = Individual.generateRandomIndividual(4)
     simulator = Simulate(8813, ind)
-    simulator.beginEvaluate()
+    print simulator.beginEvaluate()
 
