@@ -1,17 +1,6 @@
 Loading configuration... done.
-Loading net-file from 'sumo/test.net.xml'...  done (4ms).
-Loading additional-files from 'sumo/test.det.xml'...  done (1ms).
+Loading net-file from 'sumo/SampleRoad/GridLocalOptimum/test.net.xml'...  done (4ms).
+Loading additional-files from 'sumo/SampleRoad/GridLocalOptimum/test.det.xml'...  done (0ms).
 Loading done.
 Simulation started with time: 0.00
 ***Starting server on port 8813 ***
-Simulation ended at time: 1001.00
-Reason: TraCI requested termination.
-Performance: 
- Duration: 2742 ms
- Real time factor: 365.062
- UPS: 14625.820569
-Vehicles: 
- Emitted: 98 (Loaded: 200)
- Running: 38
- Waiting: 102
-

@@ -3,7 +3,8 @@ import math
 import random
 
 class SA:
-
+    
+    dataDir = "."
     def __init__(self):
         #do nothing
         pass
@@ -38,7 +39,7 @@ class SA:
         optimalEnergy = 99999999 
         
         #before start, evaluate the start individual first
-        startIndividual.evaluate() #get the fitness
+        startIndividual.evaluate(self.dataDir) #get the fitness
         currentIndividual = startIndividual
         currentEnergy = currentIndividual.fitness
         #record fitness
@@ -48,13 +49,14 @@ class SA:
             T = self.temperature(timeCount, maxIterationNum)
             #get the neighbour
             newInd = currentIndividual.neighbour("extractBest", bestIndividual)
-            newInd.evaluate()
+            newInd.evaluate(self.dataDir)
             
             acquiredP = self.P(currentIndividual, newInd, T)
             criterionP = random.random()
-            
+            print "acquiredP" + str(acquiredP)
+            print "ceiteriosP" + str(criterionP)
             if acquiredP > criterionP:
-#                 print "transition success"
+                print "transition success"
                 currentIndividual = newInd
                 currentEnergy = newInd.fitness
 #             else:
@@ -81,7 +83,8 @@ class SA:
         outputFile.write(totalIndividualStr)
         outputFile.close()
             
-    def startSA(self, maxIterationNum, individualNum, startIndividual):
+    def startSA(self, dataDir, maxIterationNum, individualNum, startIndividual):
+        self.dataDir = dataDir
         bestIndividual = self.iterate(maxIterationNum, startIndividual)
         self.recordBestToFile("best" + str(maxIterationNum) + ".txt", bestIndividual, Simulate.trafficLightIdList)
 

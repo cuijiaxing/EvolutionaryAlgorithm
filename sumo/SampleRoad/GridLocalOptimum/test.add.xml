@@ -1,0 +1,34 @@
+<additional>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_0/0to0/1_0" lane="0/0to0/1_0" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_0/0to0/1_1" lane="0/0to0/1_1" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_1/1to0/1_0" lane="1/1to0/1_0" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_1/1to0/1_1" lane="1/1to0/1_1" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_left1to0/1_0" lane="left1to0/1_0" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_left1to0/1_1" lane="left1to0/1_1" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_top0to0/1_0" lane="top0to0/1_0" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_top0to0/1_1" lane="top0to0/1_1" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_0/0to1/0_0" lane="0/0to1/0_0" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_0/0to1/0_1" lane="0/0to1/0_1" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_1/1to1/0_0" lane="1/1to1/0_0" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_1/1to1/0_1" lane="1/1to1/0_1" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_bottom1to1/0_0" lane="bottom1to1/0_0" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_bottom1to1/0_1" lane="bottom1to1/0_1" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_right0to1/0_0" lane="right0to1/0_0" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_right0to1/0_1" lane="right0to1/0_1" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_0/1to0/0_0" lane="0/1to0/0_0" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_0/1to0/0_1" lane="0/1to0/0_1" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_1/0to0/0_0" lane="1/0to0/0_0" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_1/0to0/0_1" lane="1/0to0/0_1" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_bottom0to0/0_0" lane="bottom0to0/0_0" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_bottom0to0/0_1" lane="bottom0to0/0_1" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_left0to0/0_0" lane="left0to0/0_0" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_left0to0/0_1" lane="left0to0/0_1" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_0/1to1/1_0" lane="0/1to1/1_0" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_0/1to1/1_1" lane="0/1to1/1_1" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_1/0to1/1_0" lane="1/0to1/1_0" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_1/0to1/1_1" lane="1/0to1/1_1" length="50" pos="333.8"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_right1to1/1_0" lane="right1to1/1_0" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_right1to1/1_1" lane="right1to1/1_1" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_top1to1/1_0" lane="top1to1/1_0" length="50" pos="341.85"/>
+	<e1Detector file="e1output.xml" freq="10" friendlyPos="x" id="e1det_top1to1/1_1" lane="top1to1/1_1" length="50" pos="341.85"/>
+</additional>

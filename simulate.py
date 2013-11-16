@@ -50,9 +50,8 @@ class Simulate:
             for inductionLoop in inductionLoopIdList:
                 if traci.inductionloop.getLastStepMeanSpeed(inductionLoop) > 1:
                     totalSpeed = totalSpeed + traci.inductionloop.getLastStepMeanSpeed(inductionLoop)
-                    traci.lane.
                     #totalSpeed = totalSpeed + traci.inductionloop.getLastStepVehicleNumber(inductionLoop)
-        
+        print totalSpeed;
         traci.close()
         self.fitness = totalSpeed / len(inductionLoopIdList)
         return totalSpeed / len(inductionLoopIdList)

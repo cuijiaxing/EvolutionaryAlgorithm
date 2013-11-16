@@ -1,0 +1,18 @@
+<nodes>
+<node id="0" x="-500.000000" y="-500.000000" type="priority"/>
+<node id="1" x="-500.000000" y="-167.000000" type="priority"/>
+<node id="2" x="-500.000000" y="166.000000" type="priority"/>
+<node id="3" x="-500.000000" y="499.000000" type="priority"/>
+<node id="4" x="-167.000000" y="-500.000000" type="priority"/>
+<node id="5" x="-167.000000" y="-167.000000" type="traffic_light"/>
+<node id="6" x="-167.000000" y="166.000000" type="traffic_light"/>
+<node id="7" x="-167.000000" y="499.000000" type="traffic_light"/>
+<node id="8" x="166.000000" y="-500.000000" type="priority"/>
+<node id="9" x="166.000000" y="-167.000000" type="traffic_light"/>
+<node id="10" x="166.000000" y="166.000000" type="traffic_light"/>
+<node id="11" x="166.000000" y="499.000000" type="traffic_light"/>
+<node id="12" x="499.000000" y="-500.000000" type="priority"/>
+<node id="13" x="499.000000" y="-167.000000" type="traffic_light"/>
+<node id="14" x="499.000000" y="166.000000" type="traffic_light"/>
+<node id="15" x="499.000000" y="499.000000" type="traffic_light"/>
+</nodes>
