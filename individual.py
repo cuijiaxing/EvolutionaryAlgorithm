@@ -69,15 +69,15 @@ class Individual:
         return newInstance
 
     #evaluate the fitness
-    def evaluate(self):
-        subProcess = SUMO.startSimulator("sumo/test.sumocfg")
+    def evaluate(self, dataDir):
+        subProcess = SUMO.startSimulator(dataDir + "test.sumocfg")
         ind = Simulate(8813, self)
         self.fitness = ind.beginEvaluate()
         subProcess.wait()
 
 if __name__ == "__main__":
     #deterministic fitness 431.102042914                                                               
-    ind = Individual.generateDeterIndividual(4, [1,1,100,100,100,100,1,1,60,37,82,31,1,2,100,100])
+    ind = Individual.generateDeterIndividual(4, [21,67,36,16,82,65,88,32,31,1,35,30,97,71,66,85])
     #ind = Individual.generateRandomIndividual(4)
     simulator = Simulate(8813, ind)
     print simulator.beginEvaluate()

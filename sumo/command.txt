@@ -1,12 +1,13 @@
 
 Generate: grip net work
-netgenerate --grid-net --grid-number=2 --grid-length=400 --output-file=MySUMOFile.net.xml -L 2 --attach-length 150 --tls.guess --tls.yellow.time 0 
+netgenerate --grid --grid.number=2 --grid.length=400 --output-file=test.net.xml -L 2 --grid.attach-length 400 --tls.guess --tls.yellow.time 0
+
 
 Generate: trips
 python $SUMO_HOME/tools/trip/randomTrips.py -n test.net.xml -e 300 -p 3 -o test.trip.xml
 
 Generate detectors:
-python $SUMO_HOME/tools/output/generateTLSE1Detectors.py --net-file test.net.xml -f 10 -l 50 -o test.add.xml
+python $SUMO_HOME/tools/output/generateTLSE1Detectors.py --net-file test.net.xml -f 10 -l 50 -o test.det.xml
 
 Generate route:
 duarouter -n test.net.xml -t test.trip.xml -o test.rou.xml
@@ -18,5 +19,5 @@ Generate route from flow files:
 duarouter -n test.net.xml -t test.flow.xml -o test.rou.xml
 
 Generate route according to probability:
-jtrrouter --flow-files=test.flow.xml --turn-ratio-files=test.turns.xml --net-file=test.net.xml   --output-file=test.rou.xml --begin 0 --end 300 --ignore-errors
+jtrrouter --flow-files=test.flow.xml --turn-ratio-files=test.turns.xml --net-file=test.net.xml   --output-file=test.rou.xml --begin 0 --end 300
 
