@@ -7,7 +7,7 @@ class Individual:
     scale = TrafficLight.ScaleFactor
     MaxTime = 100 
     MinTime =  0 
-    NumForEachTrafficLight = 4 
+    NumForEachTrafficLight = 4
 
     def __init__(self, individualNum):
         self.individualNum = individualNum
@@ -48,7 +48,7 @@ class Individual:
         ind.genes = self.genes
         return ind
     #get the neighbour of a certain state
-    def neighbour(self, strategy):
+    def neighbour(self, strategy, bestInd = None):
         newInstance = self.clone()
         #select one point and change it randomly
         if strategy == "random":
@@ -58,6 +58,12 @@ class Individual:
         elif strategy == "reverse":
             index = random.randint(0, self.individualNum - 1)
             newTrac = TrafficLight.getAReverseTrafficLight(newInstance.genes[index], self.MinTime, self.MaxTime)
+        elif strategy == "extractBest":
+            index = random.randint(0, self.individualNum - 1)
+            if bestInd is None:
+                newTrac = TrafficLight.getARandomTrafficLight(self.NumForEachTrafficLight, self.MinTime, self.MaxTime)
+            else:
+                newTrac = TrafficLight.getTrafficLightFromTheBest(bestInd.genes[index])
             
         newInstance.genes[index] = newTrac
         return newInstance

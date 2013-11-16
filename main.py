@@ -5,7 +5,7 @@ from individual import Individual
 
 if  __name__== "__main__":
     #construct a start individual
-    maxIterationNum = 1000
+    maxIterationNum = 800 
     trafficLightNum = 4
     ins = SA()
     startIndividual = Individual.generateRandomIndividual(trafficLightNum)

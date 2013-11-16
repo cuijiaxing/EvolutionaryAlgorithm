@@ -47,7 +47,7 @@ class SA:
             #get the current temperature
             T = self.temperature(timeCount, maxIterationNum)
             #get the neighbour
-            newInd = currentIndividual.neighbour("random")
+            newInd = currentIndividual.neighbour("extractBest", bestIndividual)
             newInd.evaluate()
             
             acquiredP = self.P(currentIndividual, newInd, T)

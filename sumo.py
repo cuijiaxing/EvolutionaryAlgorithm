@@ -6,5 +6,5 @@ class SUMO:
     def startSimulator(cls, configFileName):
         pythonCommand = "sumo"
         fh = open("NUL", "w")
-        sumoProcess = subprocess.Popen([pythonCommand, "-c", configFileName,"--remote-port", "8813"], stdout = sys.stdout,stderr = sys.stderr)
+        sumoProcess = subprocess.Popen([pythonCommand, "-c", configFileName,"--remote-port", "8813"], stdout = fh,stderr = fh)
         return sumoProcess

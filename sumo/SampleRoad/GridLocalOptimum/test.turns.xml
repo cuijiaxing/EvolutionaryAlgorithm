@@ -1,0 +1,22 @@
+<turns>
+   <interval begin="0" end="300">
+       <fromEdge id="left0to0/0">
+           <toEdge id="0/0to0/1" probability="0.5"/>
+           <toEdge id="0/0to1/0" probability="0.5"/>
+      </fromEdge>
+      <fromEdge id="0/0to0/1">
+          <toEdge id="0/1to1/1" probability="1"/>
+      </fromEdge>
+      <fromEdge id="0/0to1/0">
+          <toEdge id="1/0to1/1" probability="1"/>
+      </fromEdge>
+      <fromEdge id="0/1to1/1">
+          <toEdge id="1/1toright1" probability="1"/>
+      </fromEdge>
+      <fromEdge id="1/0to1/1">
+          <toEdge id="1/1toright1" probability="1"/>
+      </fromEdge>
+   </interval>
+   <sink edges="1/1toright1"/>
+
+</turns>

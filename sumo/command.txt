@@ -16,3 +16,7 @@ $SUMO_HOME/tools/trip/route2trips.py test.rou.xml
 
 Generate route from flow files:
 duarouter -n test.net.xml -t test.flow.xml -o test.rou.xml
+
+Generate route according to probability:
+jtrrouter --flow-files=test.flow.xml --turn-ratio-files=test.turns.xml --net-file=test.net.xml   --output-file=test.rou.xml --begin 0 --end 300 --ignore-errors
+

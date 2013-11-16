@@ -18,7 +18,15 @@ class TrafficLight:
         for i in xrange(len(ind.times)):
             reverseArray.append(cls.scale(maxValue) - ind.times[i])
         return TrafficLight(reverseArray)
-        
+    
+    #get neighbour with proportion to best fitness
+    @classmethod
+    def getTrafficLightFromTheBest(cls, bestTrafficLight):
+        return TrafficLight(bestTrafficLight.times)
+   
+    #clone itself
+    def clone(self):
+        return TrafficLight(self.times)
        
     @classmethod 
     def scale(cls, value):

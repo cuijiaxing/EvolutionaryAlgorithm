@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Fri Nov 15 20:43:37 2013 by SUMO jtrrouter Version 0.17.1
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/jtrrouterConfiguration.xsd">
+
+    <input>
+        <net-file value="test.net.xml"/>
+        <flow-files value="test.flow.xml"/>
+        <turn-ratio-files value="test.turns.xml"/>
+    </input>
+
+    <output>
+        <output-file value="test.rou.xml"/>
+    </output>
+
+    <processing>
+        <ignore-errors value="true"/>
+    </processing>
+
+    <time>
+        <begin value="0"/>
+        <end value="300"/>
+    </time>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/routes_file.xsd">
+    <vehicle id="0.0" depart="0.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.1" depart="0.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.2" depart="1.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.3" depart="2.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.4" depart="3.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.5" depart="3.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.6" depart="4.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.7" depart="5.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.8" depart="6.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.9" depart="6.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.10" depart="7.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.11" depart="8.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.12" depart="9.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.13" depart="9.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.14" depart="10.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.15" depart="11.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.16" depart="12.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.17" depart="12.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.18" depart="13.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.19" depart="14.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.20" depart="15.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.21" depart="15.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.22" depart="16.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.23" depart="17.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.24" depart="18.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.25" depart="18.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.26" depart="19.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.27" depart="20.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.28" depart="21.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.29" depart="21.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.30" depart="22.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.31" depart="23.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.32" depart="24.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.33" depart="24.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.34" depart="25.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.35" depart="26.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.36" depart="27.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.37" depart="27.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.38" depart="28.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.39" depart="29.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.40" depart="30.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.41" depart="30.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.42" depart="31.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.43" depart="32.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.44" depart="33.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.45" depart="33.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.46" depart="34.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.47" depart="35.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.48" depart="36.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.49" depart="36.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.50" depart="37.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.51" depart="38.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.52" depart="39.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.53" depart="39.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.54" depart="40.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.55" depart="41.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.56" depart="42.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.57" depart="42.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.58" depart="43.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.59" depart="44.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.60" depart="45.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.61" depart="45.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.62" depart="46.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.63" depart="47.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.64" depart="48.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.65" depart="48.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.66" depart="49.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.67" depart="50.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.68" depart="51.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.69" depart="51.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.70" depart="52.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.71" depart="53.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.72" depart="54.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.73" depart="54.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.74" depart="55.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.75" depart="56.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.76" depart="57.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.77" depart="57.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.78" depart="58.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.79" depart="59.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.80" depart="60.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.81" depart="60.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.82" depart="61.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.83" depart="62.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.84" depart="63.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.85" depart="63.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.86" depart="64.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.87" depart="65.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.88" depart="66.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.89" depart="66.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.90" depart="67.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.91" depart="68.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.92" depart="69.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.93" depart="69.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.94" depart="70.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.95" depart="71.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.96" depart="72.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.97" depart="72.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.98" depart="73.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.99" depart="74.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.100" depart="75.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.101" depart="75.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.102" depart="76.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.103" depart="77.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.104" depart="78.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.105" depart="78.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.106" depart="79.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.107" depart="80.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.108" depart="81.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.109" depart="81.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.110" depart="82.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.111" depart="83.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.112" depart="84.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.113" depart="84.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.114" depart="85.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.115" depart="86.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.116" depart="87.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.117" depart="87.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.118" depart="88.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.119" depart="89.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.120" depart="90.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.121" depart="90.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.122" depart="91.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.123" depart="92.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.124" depart="93.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.125" depart="93.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.126" depart="94.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.127" depart="95.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.128" depart="96.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.129" depart="96.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.130" depart="97.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.131" depart="98.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.132" depart="99.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.133" depart="99.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.134" depart="100.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.135" depart="101.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.136" depart="102.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.137" depart="102.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.138" depart="103.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.139" depart="104.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.140" depart="105.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.141" depart="105.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.142" depart="106.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.143" depart="107.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.144" depart="108.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.145" depart="108.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.146" depart="109.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.147" depart="110.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.148" depart="111.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.149" depart="111.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.150" depart="112.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.151" depart="113.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.152" depart="114.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.153" depart="114.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.154" depart="115.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.155" depart="116.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.156" depart="117.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.157" depart="117.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.158" depart="118.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.159" depart="119.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.160" depart="120.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.161" depart="120.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.162" depart="121.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.163" depart="122.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.164" depart="123.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.165" depart="123.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.166" depart="124.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.167" depart="125.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.168" depart="126.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.169" depart="126.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.170" depart="127.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.171" depart="128.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.172" depart="129.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.173" depart="129.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.174" depart="130.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.175" depart="131.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.176" depart="132.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.177" depart="132.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.178" depart="133.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.179" depart="134.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.180" depart="135.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.181" depart="135.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.182" depart="136.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.183" depart="137.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.184" depart="138.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.185" depart="138.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.186" depart="139.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.187" depart="140.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.188" depart="141.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.189" depart="141.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.190" depart="142.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.191" depart="143.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.192" depart="144.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.193" depart="144.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.194" depart="145.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.195" depart="146.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.196" depart="147.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.197" depart="147.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.198" depart="148.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.199" depart="149.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.200" depart="150.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.201" depart="150.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.202" depart="151.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.203" depart="152.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.204" depart="153.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.205" depart="153.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.206" depart="154.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.207" depart="155.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.208" depart="156.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.209" depart="156.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.210" depart="157.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.211" depart="158.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.212" depart="159.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.213" depart="159.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.214" depart="160.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.215" depart="161.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.216" depart="162.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.217" depart="162.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.218" depart="163.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.219" depart="164.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.220" depart="165.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.221" depart="165.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.222" depart="166.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.223" depart="167.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.224" depart="168.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.225" depart="168.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.226" depart="169.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.227" depart="170.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.228" depart="171.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.229" depart="171.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.230" depart="172.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.231" depart="173.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.232" depart="174.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.233" depart="174.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.234" depart="175.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.235" depart="176.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.236" depart="177.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.237" depart="177.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.238" depart="178.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.239" depart="179.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.240" depart="180.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.241" depart="180.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.242" depart="181.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.243" depart="182.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.244" depart="183.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.245" depart="183.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.246" depart="184.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.247" depart="185.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.248" depart="186.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.249" depart="186.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.250" depart="187.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.251" depart="188.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.252" depart="189.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.253" depart="189.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.254" depart="190.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.255" depart="191.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.256" depart="192.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.257" depart="192.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.258" depart="193.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.259" depart="194.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.260" depart="195.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.261" depart="195.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.262" depart="196.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.263" depart="197.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.264" depart="198.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.265" depart="198.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.266" depart="199.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.267" depart="200.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.268" depart="201.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.269" depart="201.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.270" depart="202.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.271" depart="203.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.272" depart="204.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.273" depart="204.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.274" depart="205.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.275" depart="206.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.276" depart="207.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.277" depart="207.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.278" depart="208.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.279" depart="209.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.280" depart="210.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.281" depart="210.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.282" depart="211.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.283" depart="212.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.284" depart="213.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.285" depart="213.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.286" depart="214.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.287" depart="215.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.288" depart="216.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.289" depart="216.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.290" depart="217.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.291" depart="218.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.292" depart="219.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.293" depart="219.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.294" depart="220.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.295" depart="221.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.296" depart="222.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.297" depart="222.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.298" depart="223.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.299" depart="224.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.300" depart="225.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.301" depart="225.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.302" depart="226.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.303" depart="227.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.304" depart="228.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.305" depart="228.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.306" depart="229.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.307" depart="230.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.308" depart="231.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.309" depart="231.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.310" depart="232.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.311" depart="233.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.312" depart="234.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.313" depart="234.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.314" depart="235.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.315" depart="236.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.316" depart="237.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.317" depart="237.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.318" depart="238.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.319" depart="239.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.320" depart="240.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.321" depart="240.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.322" depart="241.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.323" depart="242.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.324" depart="243.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.325" depart="243.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.326" depart="244.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.327" depart="245.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.328" depart="246.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.329" depart="246.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.330" depart="247.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.331" depart="248.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.332" depart="249.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.333" depart="249.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.334" depart="250.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.335" depart="251.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.336" depart="252.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.337" depart="252.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.338" depart="253.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.339" depart="254.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.340" depart="255.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.341" depart="255.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.342" depart="256.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.343" depart="257.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.344" depart="258.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.345" depart="258.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.346" depart="259.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.347" depart="260.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.348" depart="261.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.349" depart="261.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.350" depart="262.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.351" depart="263.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.352" depart="264.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.353" depart="264.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.354" depart="265.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.355" depart="266.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.356" depart="267.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.357" depart="267.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.358" depart="268.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.359" depart="269.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.360" depart="270.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.361" depart="270.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.362" depart="271.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.363" depart="272.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.364" depart="273.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.365" depart="273.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.366" depart="274.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.367" depart="275.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.368" depart="276.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.369" depart="276.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.370" depart="277.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.371" depart="278.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.372" depart="279.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.373" depart="279.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.374" depart="280.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.375" depart="281.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.376" depart="282.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.377" depart="282.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.378" depart="283.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.379" depart="284.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.380" depart="285.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.381" depart="285.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.382" depart="286.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.383" depart="287.25">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.384" depart="288.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.385" depart="288.75">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.386" depart="289.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.387" depart="290.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.388" depart="291.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.389" depart="291.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.390" depart="292.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.391" depart="293.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.392" depart="294.00">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.393" depart="294.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.394" depart="295.50">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.395" depart="296.25">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.396" depart="297.00">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.397" depart="297.75">
+        <route edges="left0to0/0 0/0to1/0 1/0to1/1 1/1toright1"/>
+    </vehicle>
+    <vehicle id="0.398" depart="298.50">
+        <route edges="left0to0/0 0/0to0/1 0/1to1/1 1/1toright1"/>
+    </vehicle>
+</routes>
