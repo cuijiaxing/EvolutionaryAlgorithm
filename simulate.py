@@ -1,7 +1,9 @@
 import traci
 
 class Simulate:
-    trafficLightIdList = None
+    trafficLightIdList = ["65470359", "65535917", "65531994", "65620946"]
+    trafficLightPhaseNumList = [4, 2, 3, 2]
+    
     
     def __init__(self, portNum, individual):
         """
@@ -21,7 +23,7 @@ class Simulate:
         traci.init(self.portNum, 10, "localhost", str(self.portNum))
         #print(traci.simulation.getCurrentTime())
         #get all the traffic lights id in the network
-        self.trafficLightIdList = traci.trafficlights.getIDList()
+        #self.trafficLightIdList = traci.trafficlights.getIDList()
         #traverse all the traffic lights
         for i in xrange(len(self.trafficLightIdList)):
             #traverse all the traffic lights
@@ -41,8 +43,9 @@ class Simulate:
 
         inductionLoopIdList = traci.inductionloop.getIDList()
         totalSpeed = 0
-        for _ in xrange(1000):
+        for _ in xrange(300):
             traci.simulationStep()
+            print(traci.multientryexit.getLastStepVehicleNumber("e3_1"))
             #get the speed from all detectors
             #notice that the value CA_CERTS
 #             if traci.inductionloop.getLastStepMeanSpeed(inductionLoopIdList[0]) > 1:
@@ -51,7 +54,6 @@ class Simulate:
                 if traci.inductionloop.getLastStepMeanSpeed(inductionLoop) > 1:
                     totalSpeed = totalSpeed + traci.inductionloop.getLastStepMeanSpeed(inductionLoop)
                     #totalSpeed = totalSpeed + traci.inductionloop.getLastStepVehicleNumber(inductionLoop)
-        print totalSpeed;
         traci.close()
         self.fitness = totalSpeed / len(inductionLoopIdList)
         return totalSpeed / len(inductionLoopIdList)

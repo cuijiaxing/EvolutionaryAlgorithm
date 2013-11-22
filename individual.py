@@ -2,6 +2,7 @@ import random
 from sumo import SUMO
 from simulate import Simulate 
 from traffic_light import TrafficLight
+from info import Info
 class Individual:
     
     scale = TrafficLight.ScaleFactor
@@ -20,8 +21,10 @@ class Individual:
         for i in xrange(len(inputArray)):
             inputArray[i] = inputArray[i] * cls.scale
         trafficLightList = []
+        currentIndex = 0
         for i in xrange(individualNum):
-            trafficLightList.append(TrafficLight(inputArray[i * cls.NumForEachTrafficLight : (i + 1) * cls.NumForEachTrafficLight]));
+            trafficLightList.append(TrafficLight(inputArray[currentIndex : currentIndex + Info.trafficLightPhaseNumList[i]]));
+            currentIndex = currentIndex + Info.trafficLightPhaseNumList[i]
         
         ind = Individual(individualNum)
         ind.genes = trafficLightList
@@ -34,8 +37,8 @@ class Individual:
     @classmethod
     def generateRandomIndividual(cls, individualNum):
         trafficLightList = []
-        for _ in xrange(individualNum):
-            trafficLightList.append(TrafficLight([cls.getARandomTime() for _ in range(cls.NumForEachTrafficLight)]));
+        for i in xrange(individualNum):
+            trafficLightList.append(TrafficLight([cls.getARandomTime() for _  in range(Info.trafficLightPhaseNumList[i])]));
         
         ind = Individual(individualNum)
         ind.genes = trafficLightList
@@ -77,7 +80,7 @@ class Individual:
 
 if __name__ == "__main__":
     #deterministic fitness 431.102042914                                                               
-    ind = Individual.generateDeterIndividual(4, [21,67,36,16,82,65,88,32,31,1,35,30,97,71,66,85])
+    ind = Individual.generateDeterIndividual(4, [51,95,69,40,63,64,94,79,17,79,87,33,71,85,3,90])
     #ind = Individual.generateRandomIndividual(4)
     simulator = Simulate(8813, ind)
     print simulator.beginEvaluate()

@@ -1,6 +1,7 @@
 Loading configuration... done.
-Loading net-file from 'sumo/SampleRoad/GridLocalOptimum/test.net.xml'...  done (4ms).
-Loading additional-files from 'sumo/SampleRoad/GridLocalOptimum/test.det.xml'...  done (0ms).
+Loading net-file from 'sumo/SampleRoad/Caltrain/test.net.xml'...  done (216ms).
+Loading additional-files from 'sumo/SampleRoad/Caltrain/test.det.xml'...  done (0ms).
+Loading additional-files from 'sumo/SampleRoad/Caltrain/e3.det.xml'...  done (1ms).
 Loading done.
 Simulation started with time: 0.00
 ***Starting server on port 8813 ***

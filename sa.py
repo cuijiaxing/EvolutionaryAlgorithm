@@ -5,12 +5,15 @@ import random
 class SA:
     
     dataDir = "."
+    temperatureScale = 100 #scale the temperature into the interval[0,100]
+    MaxFitness = 10000
     def __init__(self):
         #do nothing
         pass
 
     def temperature(self, currentTime, totalTime):
-        return totalTime - currentTime
+        
+        return (totalTime - currentTime) * 100.0 / totalTime
     
     def P(self, prevIndividual, individual, time):
         
@@ -19,7 +22,8 @@ class SA:
             return 1.0
         else:
             delta = prevIndividual.fitness - individual.fitness
-            return 1 / (1 + math.exp(delta * 1.0 / time))
+            #return 1 / (1 + math.exp(delta * 1.0 / (time + 1)))
+            return math.exp((-1.0 * delta) / self.MaxFitness) / (time + 1)
         
         
         
@@ -43,18 +47,19 @@ class SA:
         currentIndividual = startIndividual
         currentEnergy = currentIndividual.fitness
         #record fitness
-        fitnessOutputFile = open("fitness" + str(maxIterationNum) + ".txt", "w")
+        fitnessOutputFile = open("output/fitness" + str(maxIterationNum) + ".txt", "w")
         while timeCount < maxIterationNum and currentEnergy < optimalEnergy:
             #get the current temperature
             T = self.temperature(timeCount, maxIterationNum)
             #get the neighbour
-            newInd = currentIndividual.neighbour("extractBest", bestIndividual)
+            newInd = currentIndividual.neighbour("random", bestIndividual)
             newInd.evaluate(self.dataDir)
+            print newInd.fitness
             
             acquiredP = self.P(currentIndividual, newInd, T)
             criterionP = random.random()
-            print "acquiredP" + str(acquiredP)
-            print "ceiteriosP" + str(criterionP)
+#             print "acquiredP" + str(acquiredP)
+#             print "ceiteriosP" + str(criterionP)
             if acquiredP > criterionP:
                 print "transition success"
                 currentIndividual = newInd
@@ -86,25 +91,4 @@ class SA:
     def startSA(self, dataDir, maxIterationNum, individualNum, startIndividual):
         self.dataDir = dataDir
         bestIndividual = self.iterate(maxIterationNum, startIndividual)
-        self.recordBestToFile("best" + str(maxIterationNum) + ".txt", bestIndividual, Simulate.trafficLightIdList)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        self.recordBestToFile("output/best" + str(maxIterationNum) + ".txt", bestIndividual, Simulate.trafficLightIdList)

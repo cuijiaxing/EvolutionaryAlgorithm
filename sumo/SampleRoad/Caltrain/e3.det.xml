@@ -1,0 +1,20 @@
+<additional>
+    <entryExitDetector id="e3_1" freq="1" file="./output/e3_1.xml">
+           <detEntry lane="188696880#3_1" pos="3"/>
+           <detEntry lane="188696880#3_0" pos="3"/>
+           <detEntry lane="244107342#2_0" pos="3"/>
+           <detEntry lane="244107342#2_1" pos="3"/>
+           <detEntry lane="30968190#3_0" pos="3"/>
+           <detEntry lane="30968190#3_1" pos="3"/>
+           <detEntry lane="91928200#9_1" pos="80"/>
+           <detEntry lane="91928200#9_0" pos="80"/>
+           <detExit lane="8965859#0_1" pos="3"/>
+           <detExit lane="8965859#0_0" pos="3"/>
+           <detExit lane="188696885#0_1" pos="3"/>
+           <detExit lane="188696885#0_0" pos="3"/>
+           <detExit lane="60767660#0_1" pos="10"/>
+           <detExit lane="60767660#0_0" pos="10"/>
+           <detExit lane="244107342#3_1" pos="3"/>
+           <detExit lane="244107342#3_0" pos="3"/>
+    </entryExitDetector>
+</additional>
