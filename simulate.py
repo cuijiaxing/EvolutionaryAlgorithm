@@ -21,9 +21,6 @@ class Simulate:
         using port num to identify a connection
         """
         traci.init(self.portNum, 10, "localhost", str(self.portNum))
-        #print(traci.simulation.getCurrentTime())
-        #get all the traffic lights id in the network
-        #self.trafficLightIdList = traci.trafficlights.getIDList()
         #traverse all the traffic lights
         for i in xrange(len(self.trafficLightIdList)):
             #traverse all the traffic lights
@@ -38,25 +35,14 @@ class Simulate:
                 phaseList.append(traci.trafficlights.Phase(self.individual.genes[i].times[j], self.individual.genes[i].times[j], self.individual.genes[i].times[j], tlsLogicList._phases[j]._phaseDef))
             tlsLogicList._phases = phaseList
             traci.trafficlights.setCompleteRedYellowGreenDefinition(self.trafficLightIdList[i], tlsLogicList)
-        if Simulate.trafficLightIdList == None:
-            Simulate.trafficLightIdList = traci.trafficlights.getIDList()
 
-        inductionLoopIdList = traci.inductionloop.getIDList()
-        totalSpeed = 0
-        for _ in xrange(300):
+        totalNumPassed = 0
+        for _ in xrange(1000):
             traci.simulationStep()
-            print(traci.multientryexit.getLastStepVehicleNumber("e3_1"))
-            #get the speed from all detectors
-            #notice that the value CA_CERTS
-#             if traci.inductionloop.getLastStepMeanSpeed(inductionLoopIdList[0]) > 1:
-#                 totalSpeed = totalSpeed + traci.inductionloop.getLastStepMeanSpeed(inductionLoopIdList[0])
-            for inductionLoop in inductionLoopIdList:
-                if traci.inductionloop.getLastStepMeanSpeed(inductionLoop) > 1:
-                    totalSpeed = totalSpeed + traci.inductionloop.getLastStepMeanSpeed(inductionLoop)
-                    #totalSpeed = totalSpeed + traci.inductionloop.getLastStepVehicleNumber(inductionLoop)
+            totalNumPassed = totalNumPassed + traci.simulation.getArrivedNumber()
         traci.close()
-        self.fitness = totalSpeed / len(inductionLoopIdList)
-        return totalSpeed / len(inductionLoopIdList)
+        self.fitness = totalNumPassed
+        return totalNumPassed 
 
 
 

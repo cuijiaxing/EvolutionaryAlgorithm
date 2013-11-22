@@ -8,7 +8,7 @@ if  __name__== "__main__":
     random.seed(1)
     #construct a start individual
     dataDir = "sumo/SampleRoad/" + "Caltrain/"
-    maxIterationNum = 100 
+    maxIterationNum = 200 
     trafficLightNum = 4
     ins = SA()
     startIndividual = Individual.generateRandomIndividual(trafficLightNum)

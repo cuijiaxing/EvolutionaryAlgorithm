@@ -80,8 +80,10 @@ class Individual:
 
 if __name__ == "__main__":
     #deterministic fitness 431.102042914                                                               
-    ind = Individual.generateDeterIndividual(4, [51,95,69,40,63,64,94,79,17,79,87,33,71,85,3,90])
+    ind = Individual.generateDeterIndividual(4, [40, 30, 15, 50, 35, 30, 20, 20, 20, 80, 18])
     #ind = Individual.generateRandomIndividual(4)
+    #subProcess = SUMO.startSimulator("test.sumocfg")
     simulator = Simulate(8813, ind)
+    #subProcess.wait()
     print simulator.beginEvaluate()
 
