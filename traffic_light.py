@@ -4,6 +4,7 @@ class TrafficLight:
     def __init__(self, times):
         self.trafficLightIndexNum = len(times)
         self.times = times
+        self.phases = None
     
     #get a random individual
     @classmethod

@@ -1,19 +1,29 @@
 from simulate import Simulate
 import math
 import random
+from log import Log
 
 class SA:
     
     dataDir = "."
-    temperatureScale = 100 #scale the temperature into the interval[0,100]
-    MaxFitness = 10000
-    def __init__(self):
-        #do nothing
-        pass
+    temperatureScale = 100.0 #scale the temperature into the interval[0,100]
+    MaxFitness = 200
+    NormalizeFactor = 30 
+    maxIterationNum = 200 #best fitness = -2278 
+    trafficLightNum = 4
+    totalTimeScale = NormalizeFactor 
+    
+    def __init__(self, maxIterNum, trafficLightNum):
+        self.maxIterationNum = maxIterNum
+        self.trafficLightNum = trafficLightNum
+        
 
     def temperature(self, currentTime, totalTime):
         
-        return (totalTime - currentTime) * 100.0 / totalTime
+        temp = (totalTime - currentTime) * 1.0  / totalTime
+        if temp == 0:
+            temp = 0.00001
+        return temp * self.totalTimeScale
     
     def P(self, prevIndividual, individual, time):
         
@@ -21,22 +31,31 @@ class SA:
         if individual.fitness > prevIndividual.fitness:
             return 1.0
         else:
+            deltaFit = (prevIndividual.fitness - individual.fitness) * 1.0 / self.MaxFitness
+            return 1 / (1 + math.exp((deltaFit) * self.NormalizeFactor/ ((time + 1.0) )))
+            #deltaT = (time) * 1.0 / self.totalTimeScale
+            #return math.exp(-1 *  deltaFit / deltaT) / 2
+            #return math.exp((-1.0 * delta)  / (time + 1)
+    
+    @classmethod
+    def oneOverXFormProb(cls, prevIndividual, individual, time):
+        #always accept better ones
+        if individual.fitness > prevIndividual.fitness:
+            return 1.0
+        else:
             delta = prevIndividual.fitness - individual.fitness
-            #return 1 / (1 + math.exp(delta * 1.0 / (time + 1)))
-            return math.exp((-1.0 * delta) / self.MaxFitness) / (time + 1)
+            currentMaxProb = 1 - 1 / ((time + 1)**(1 / 10.0))
+            return currentMaxProb * (1 - delta * 1.0 / individual.fitness) #scale it
+            #return math.exp((-1.0 * delta)  / (time + 1)
         
         
-        
-            
-
-
 
 
     def iterate(self, maxIterationNum, startIndividual):
         #define best individual and best energy
         bestIndividual = None;
         #define current individual and current energy
-        bestEnergy = currentEnergy = 0 
+        bestEnergy = currentEnergy = -9999999999 
         currentIndividual = None
         timeCount = 1 #it has to be at 1 because in temperature function ,it is a denomerator 
         #define the optimal fitness the system can achieve
@@ -48,6 +67,8 @@ class SA:
         currentEnergy = currentIndividual.fitness
         #record fitness
         fitnessOutputFile = open("output/fitness" + str(maxIterationNum) + ".txt", "w")
+        #prepare log file
+        Log.initialize()
         while timeCount < maxIterationNum and currentEnergy < optimalEnergy:
             #get the current temperature
             T = self.temperature(timeCount, maxIterationNum)
@@ -57,25 +78,29 @@ class SA:
             print newInd.fitness
             
             acquiredP = self.P(currentIndividual, newInd, T)
+            #acquiredP = self.oneOverXFormProb(currentIndividual, newInd, T)
             criterionP = random.random()
-#             print "acquiredP" + str(acquiredP)
-#             print "ceiteriosP" + str(criterionP)
+            print(acquiredP)
             if acquiredP > criterionP:
-                print "transition success"
+                if newInd.fitness < currentIndividual.fitness:
+                    Log.logAcceptanceToFile(timeCount, T, 1)
+                else:
+                    Log.logAcceptanceToFile(timeCount, T, 0)
                 currentIndividual = newInd
                 currentEnergy = newInd.fitness
-#             else:
-#                 print "Transition Failed"
+            else:
+                Log.logAcceptanceToFile(timeCount, T, 0)
+                
             if newInd.fitness > bestEnergy:
                 bestIndividual = newInd
                 bestEnergy = newInd.fitness
             timeCount = timeCount + 1
-#             print currentIndividual.fitness
             fitnessOutputFile.write(str(currentIndividual.fitness) + "\n")
         fitnessOutputFile.close()
             
             
-        
+        #close log file
+        Log.closeAllFile()
         return bestIndividual
     
     def recordBestToFile(self, fileName, individual, trafficLightIdList):
@@ -88,7 +113,7 @@ class SA:
         outputFile.write(totalIndividualStr)
         outputFile.close()
             
-    def startSA(self, dataDir, maxIterationNum, individualNum, startIndividual):
+    def startSA(self, dataDir, startIndividual):
         self.dataDir = dataDir
-        bestIndividual = self.iterate(maxIterationNum, startIndividual)
-        self.recordBestToFile("output/best" + str(maxIterationNum) + ".txt", bestIndividual, Simulate.trafficLightIdList)
+        bestIndividual = self.iterate(self.maxIterationNum, startIndividual)
+        self.recordBestToFile("output/best" + str(self.maxIterationNum) + ".txt", bestIndividual, Simulate.trafficLightIdList)

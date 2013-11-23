@@ -5,7 +5,7 @@
     <input>
         <net-file value="test.net.xml"/>
         <route-files value="test.rou.xml"/>
-        <!--<additional-files value="e3.det.xml"/>-->
+        <additional-files value="e3.det.xml"/>
     </input>
 
 
