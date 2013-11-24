@@ -75,16 +75,18 @@ class Individual:
     def evaluate(self, dataDir):
         subProcess = SUMO.startSimulator(dataDir + "test.sumocfg")
         ind = Simulate(8813, self)
-        self.fitness = ind.beginEvaluate("arrivedNumMinusWaitingTime")
+        self.fitness = ind.beginEvaluate()
         subProcess.wait()
 
 if __name__ == "__main__":
     #deterministic fitness 126                                                           
-    ind = Individual.generateDeterIndividual(4, [51,35,27,99,38,29,82,44,49,34,71,98,38,84,17,72])
+    #ind = Individual.generateDeterIndividual(4, [40, 30, 15, 50, 35, 30, 20, 20, 20, 80, 18])
+    
+    ind = Individual.generateDeterIndividual(4, [51,95,69,40,63,64,94,79,17,79,87,33,71,85,3,90])
     #ind = Individual.generateRandomIndividual(4)
-    #subProcess = SUMO.startSimulator("sumo/SampleRoad/Caltrain/test.sumocfg")
+    subProcess = SUMO.startSimulator("sumo/SampleRoad/Caltrain/test.sumocfg")
     simulator = Simulate(8813, ind)
-    print simulator.beginEvaluate("arrivedNumMinusWaitingTime")
+    print simulator.beginEvaluate()
     #subProcess.wait()
 
 

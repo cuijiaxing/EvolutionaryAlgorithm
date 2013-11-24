@@ -3,7 +3,7 @@ from individual import Individual
 import random
 
 class Main:
-    maxIterationNum = 200 #best fitness = -2278 
+    maxIterationNum = 100 #best fitness = -2278 
     trafficLightNum = 4
 
 if  __name__== "__main__":
