@@ -10,7 +10,8 @@ if  __name__== "__main__":
     #fix random
     random.seed(1)
     #construct a start individual
-    dataDir = "sumo/SampleRoad/" + "Caltrain/"
+    dataDir = "sumo/SampleRoad/" + "FTSP/"
+    #dataDir = "sumo/SampleRoad/" + "Caltrain/"
     #dataDir = "sumo/SampleRoad/" + "GridLocalOptimum/"
     ins = SA(Main.maxIterationNum, Main.trafficLightNum)
     startIndividual = Individual.generateRandomIndividual(Main.trafficLightNum)
