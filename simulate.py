@@ -42,7 +42,7 @@ class Simulate:
             traci.trafficlights.setCompleteRedYellowGreenDefinition(self.trafficLightIdList[i], tlsLogicList)
 
         totalNumPassed = 0
-        for _ in xrange(700):
+        for _ in xrange(800):
             traci.simulationStep()
             totalNumPassed = totalNumPassed + traci.simulation.getArrivedNumber()# - traci.simulation.getEndingTeleportNumber()
         traci.close()

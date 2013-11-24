@@ -48,7 +48,11 @@ class Individual:
     #clone the current individual
     def clone(self):
         ind = Individual(self.individualNum)
-        ind.genes = self.genes
+        ind.genes = []
+        ind.MinTime = self.MinTime
+        ind.MaxTime = self.MaxTime
+        for i in range(len(self.genes)):
+            ind.genes.append(TrafficLight(self.genes[i].times))
         return ind
     #get the neighbour of a certain state
     def neighbour(self, strategy, bestInd = None):
@@ -57,7 +61,7 @@ class Individual:
         if strategy == "random":
             index = random.randint(0, self.individualNum - 1)
             #change the traffic light into a new one
-            newTrac = TrafficLight.getARandomTrafficLight(self.NumForEachTrafficLight, self.MinTime, self.MaxTime)
+            newTrac = TrafficLight.getARandomTrafficLight(len(self.genes[index].times), self.MinTime, self.MaxTime)
         elif strategy == "reverse":
             index = random.randint(0, self.individualNum - 1)
             newTrac = TrafficLight.getAReverseTrafficLight(newInstance.genes[index], self.MinTime, self.MaxTime)
@@ -82,9 +86,9 @@ if __name__ == "__main__":
     #deterministic fitness 126                                                           
     #ind = Individual.generateDeterIndividual(4, [40, 30, 15, 50, 35, 30, 20, 20, 20, 80, 18])
     
-    ind = Individual.generateDeterIndividual(4, [51,95,69,40,63,64,94,79,17,79,87,33,71,85,3,90])
+    ind = Individual.generateDeterIndividual(4, [99,42,11,16,79,83,9,11,89,38,57])
     #ind = Individual.generateRandomIndividual(4)
-    subProcess = SUMO.startSimulator("sumo/SampleRoad/Caltrain/test.sumocfg")
+    #subProcess = SUMO.startSimulator("sumo/SampleRoad/Caltrain/test.sumocfg")
     simulator = Simulate(8813, ind)
     print simulator.beginEvaluate()
     #subProcess.wait()
