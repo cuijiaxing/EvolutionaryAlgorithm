@@ -86,7 +86,7 @@ if __name__ == "__main__":
     #deterministic fitness 126                                                           
     #ind = Individual.generateDeterIndividual(4, [40, 30, 15, 50, 35, 30, 20, 20, 20, 80, 18])
     
-    ind = Individual.generateDeterIndividual(4, [99,42,11,16,79,83,9,11,89,38,57])
+    ind = Individual.generateDeterIndividual(4, [55,10,3,7,0,88,48,99,23,83,34])
     #ind = Individual.generateRandomIndividual(4)
     #subProcess = SUMO.startSimulator("sumo/SampleRoad/Caltrain/test.sumocfg")
     simulator = Simulate(8813, ind)

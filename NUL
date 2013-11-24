@@ -1,59 +1,74 @@
 Loading configuration... done.
-Loading net-file from 'sumo/SampleRoad/Caltrain/test.net.xml'...  done (235ms).
+Loading net-file from 'sumo/SampleRoad/Caltrain/test.net.xml'...  done (161ms).
 Loading done.
 Simulation started with time: 0.00
 ***Starting server on port 8813 ***
-Warning: Teleporting vehicle '3.1'; collision with '3.0', lane=':65470359_14_0', gap=-6.84, time=149.00 stage=1.
-Warning: Vehicle '3.1' ends teleporting on edge '188696885#0', simulation time 149.00.
-Warning: Teleporting vehicle '3.6'; collision with '3.4', lane=':65470359_14_0', gap=-6.73, time=156.00 stage=1.
-Warning: Vehicle '3.6' ends teleporting on edge '188696885#0', simulation time 156.00.
-Warning: Teleporting vehicle '3.7'; collision with '3.5', lane=':65470359_14_0', gap=-5.36, time=159.00 stage=1.
-Warning: Vehicle '3.7' ends teleporting on edge '188696885#0', simulation time 159.00.
-Warning: Teleporting vehicle '3.9'; collision with '3.8', lane=':65470359_14_0', gap=-3.29, time=161.00 stage=1.
-Warning: Vehicle '3.9' ends teleporting on edge '188696885#0', simulation time 161.00.
-Warning: Teleporting vehicle '3.13'; collision with '3.14', lane=':65470359_14_0', gap=-4.71, time=167.00 stage=1.
-Warning: Vehicle '3.13' ends teleporting on edge '188696885#0', simulation time 167.00.
-Warning: Teleporting vehicle '3.16'; collision with '3.15', lane=':65470359_14_0', gap=-5.98, time=170.00 stage=1.
-Warning: Vehicle '3.16' ends teleporting on edge '188696885#0', simulation time 170.00.
-Warning: Teleporting vehicle '3.18'; collision with '3.17', lane=':65470359_14_0', gap=-7.44, time=172.00 stage=1.
-Warning: Vehicle '3.18' ends teleporting on edge '188696885#0', simulation time 172.00.
-Warning: Teleporting vehicle '3.20'; collision with '3.19', lane=':65470359_14_0', gap=-6.50, time=174.00 stage=1.
-Warning: Vehicle '3.20' ends teleporting on edge '188696885#0', simulation time 174.00.
-Warning: Teleporting vehicle '3.21'; collision with '3.22', lane=':65470359_14_0', gap=-7.41, time=176.00 stage=1.
-Warning: Vehicle '3.21' ends teleporting on edge '188696885#0', simulation time 176.00.
-Warning: Teleporting vehicle '3.24'; collision with '3.23', lane=':65470359_14_0', gap=-6.53, time=178.00 stage=1.
-Warning: Vehicle '3.24' ends teleporting on edge '188696885#0', simulation time 178.00.
-Warning: Teleporting vehicle '3.26'; collision with '3.25', lane=':65470359_14_0', gap=-5.47, time=179.00 stage=1.
-Warning: Vehicle '3.26' ends teleporting on edge '188696885#0', simulation time 179.00.
-Warning: Teleporting vehicle '3.28'; collision with '3.27', lane=':65470359_14_0', gap=-6.06, time=181.00 stage=1.
-Warning: Vehicle '3.28' ends teleporting on edge '188696885#0', simulation time 181.00.
-Warning: Teleporting vehicle '3.30'; collision with '3.29', lane=':65470359_14_0', gap=-7.15, time=183.00 stage=1.
-Warning: Vehicle '3.30' ends teleporting on edge '188696885#0', simulation time 183.00.
-Warning: Teleporting vehicle '3.32'; collision with '3.31', lane=':65470359_14_0', gap=-7.38, time=185.00 stage=1.
-Warning: Vehicle '3.32' ends teleporting on edge '188696885#0', simulation time 185.00.
-Warning: Teleporting vehicle '3.34'; collision with '3.33', lane=':65470359_14_0', gap=-5.62, time=186.00 stage=1.
-Warning: Vehicle '3.34' ends teleporting on edge '188696885#0', simulation time 186.00.
-Warning: Teleporting vehicle '3.36'; collision with '3.35', lane=':65470359_14_0', gap=-6.88, time=188.00 stage=1.
-Warning: Vehicle '3.36' ends teleporting on edge '188696885#0', simulation time 188.00.
-Warning: Teleporting vehicle '3.39'; collision with '3.40', lane=':65470359_14_0', gap=-1.68, time=192.00 stage=1.
-Warning: Vehicle '3.39' ends teleporting on edge '188696885#0', simulation time 192.00.
-Warning: Teleporting vehicle '3.42'; collision with '3.41', lane=':65470359_14_0', gap=-6.48, time=193.00 stage=1.
-Warning: Vehicle '3.42' ends teleporting on edge '188696885#0', simulation time 193.00.
-Warning: Teleporting vehicle '3.43'; collision with '3.44', lane=':65470359_14_0', gap=-6.22, time=195.00 stage=1.
-Warning: Vehicle '3.43' ends teleporting on edge '188696885#0', simulation time 195.00.
-Warning: Teleporting vehicle '3.45'; collision with '3.46', lane=':65470359_14_0', gap=-5.55, time=197.00 stage=1.
-Warning: Vehicle '3.45' ends teleporting on edge '188696885#0', simulation time 197.00.
-Warning: Teleporting vehicle '3.48'; collision with '3.47', lane=':65470359_14_0', gap=-0.59, time=199.00 stage=1.
-Warning: Vehicle '3.48' ends teleporting on edge '188696885#0', simulation time 199.00.
+Warning: Route file should be sorted by departure time, ignoring '1.0'!
+Warning: Route file should be sorted by departure time, ignoring '2.0'!
+Warning: Route file should be sorted by departure time, ignoring '3.0'!
+Warning: Route file should be sorted by departure time, ignoring '4.0'!
+Warning: Route file should be sorted by departure time, ignoring '5.0'!
+Warning: Route file should be sorted by departure time, ignoring '6.0'!
+Warning: Route file should be sorted by departure time, ignoring '3.1'!
+Warning: Route file should be sorted by departure time, ignoring '3.2'!
+Warning: Route file should be sorted by departure time, ignoring '3.3'!
+Warning: Route file should be sorted by departure time, ignoring '2.1'!
+Warning: Route file should be sorted by departure time, ignoring '3.4'!
+Warning: Route file should be sorted by departure time, ignoring '3.5'!
+Warning: Route file should be sorted by departure time, ignoring '3.6'!
+Warning: Route file should be sorted by departure time, ignoring '3.7'!
+Warning: Route file should be sorted by departure time, ignoring '2.2'!
+Warning: Route file should be sorted by departure time, ignoring '4.1'!
+Warning: Route file should be sorted by departure time, ignoring '5.1'!
+Warning: Route file should be sorted by departure time, ignoring '3.8'!
+Warning: Route file should be sorted by departure time, ignoring '3.9'!
+Warning: Route file should be sorted by departure time, ignoring '3.10'!
+Warning: Route file should be sorted by departure time, ignoring '6.1'!
+Warning: Route file should be sorted by departure time, ignoring '2.3'!
+Warning: Route file should be sorted by departure time, ignoring '3.11'!
+Warning: Route file should be sorted by departure time, ignoring '3.12'!
+Warning: Route file should be sorted by departure time, ignoring '3.13'!
+Warning: Route file should be sorted by departure time, ignoring '3.14'!
+Warning: Route file should be sorted by departure time, ignoring '2.4'!
+Warning: Route file should be sorted by departure time, ignoring '4.2'!
+Warning: Route file should be sorted by departure time, ignoring '5.2'!
+Warning: Route file should be sorted by departure time, ignoring '3.15'!
+Warning: Route file should be sorted by departure time, ignoring '3.16'!
+Warning: Teleporting vehicle '3.18'; collision with '3.17', lane=':65470359_14_0', gap=-1.64, time=130.00 stage=1.
+Warning: Vehicle '3.18' ends teleporting on edge '188696885#0', simulation time 130.00.
+Warning: Teleporting vehicle '3.21'; collision with '3.20', lane=':65470359_14_0', gap=-6.40, time=204.00 stage=1.
+Warning: Vehicle '3.21' ends teleporting on edge '188696885#0', simulation time 204.00.
+Warning: Teleporting vehicle '3.23'; collision with '3.22', lane=':65470359_14_0', gap=-5.55, time=207.00 stage=1.
+Warning: Vehicle '3.23' ends teleporting on edge '188696885#0', simulation time 207.00.
+Warning: Teleporting vehicle '3.25'; collision with '3.24', lane=':65470359_14_0', gap=-3.79, time=209.00 stage=1.
+Warning: Vehicle '3.25' ends teleporting on edge '188696885#0', simulation time 209.00.
+Warning: Teleporting vehicle '3.29'; collision with '3.26', lane=':65470359_14_0', gap=-5.61, time=281.00 stage=1.
+Warning: Vehicle '3.29' ends teleporting on edge '188696885#0', simulation time 281.00.
+Warning: Teleporting vehicle '3.31'; collision with '3.28', lane=':65470359_14_0', gap=-7.17, time=284.00 stage=1.
+Warning: Vehicle '3.31' ends teleporting on edge '188696885#0', simulation time 284.00.
+Warning: Teleporting vehicle '3.33'; collision with '3.30', lane=':65470359_14_0', gap=-7.33, time=354.00 stage=1.
+Warning: Vehicle '3.33' ends teleporting on edge '188696885#0', simulation time 354.00.
+Warning: Teleporting vehicle '3.35'; collision with '3.32', lane=':65470359_14_0', gap=-7.38, time=357.00 stage=1.
+Warning: Vehicle '3.35' ends teleporting on edge '188696885#0', simulation time 357.00.
+Warning: Teleporting vehicle '3.36'; collision with '3.39', lane=':65470359_14_0', gap=-6.72, time=429.00 stage=1.
+Warning: Vehicle '3.36' ends teleporting on edge '188696885#0', simulation time 429.00.
+Warning: Teleporting vehicle '3.38'; collision with '3.41', lane=':65470359_14_0', gap=-5.27, time=432.00 stage=1.
+Warning: Vehicle '3.38' ends teleporting on edge '188696885#0', simulation time 432.00.
+Warning: Teleporting vehicle '3.40'; collision with '3.43', lane=':65470359_14_0', gap=-4.74, time=434.00 stage=1.
+Warning: Vehicle '3.40' ends teleporting on edge '188696885#0', simulation time 434.00.
+Warning: Teleporting vehicle '3.45'; collision with '3.42', lane=':65470359_14_0', gap=-7.05, time=504.00 stage=1.
+Warning: Vehicle '3.45' ends teleporting on edge '188696885#0', simulation time 504.00.
+Warning: Teleporting vehicle '3.47'; collision with '3.44', lane=':65470359_14_0', gap=-7.40, time=507.00 stage=1.
+Warning: Vehicle '3.47' ends teleporting on edge '188696885#0', simulation time 507.00.
 Simulation ended at time: 801.00
 Reason: TraCI requested termination.
 Performance: 
- Duration: 1109 ms
- Real time factor: 722.272
- UPS: 41937.781785
+ Duration: 1189 ms
+ Real time factor: 673.675
+ UPS: 49331.370900
 Vehicles: 
- Emitted: 154
- Running: 15
+ Emitted: 223
+ Running: 37
  Waiting: 0
-Teleports: 21 (Collisions: 21)
+Teleports: 13 (Collisions: 13)
 
